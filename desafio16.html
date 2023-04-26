@@ -12,6 +12,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="container">
+    <nav class="flex items-center">
+      <h2>Meus contatos</h2>
+    
+      <ul>
+        <li>
+          <ion-icon name="add"></ion-icon>
+        <li>
+          <ion-icon name="pencil"></ion-icon>
+        </li>
+        <li>
+          <ion-icon name="trash"></ion-icon>
+        </li>
+      </ul>
+    </nav>
+
+    <form>
+      <div class="input-wrapper flex items-center">
+        <label class="sr-only" for="filter">Busque por nome ou por dados de 
+        contato...
+        </label>
+        <ion-icon name="search-outline"></ion-icon>
+        <input
+        id="filter"
+        type="text"
+        placeholder="Busque por nome ou por dados de contato...">      
+      </div>
+    </form>
+  </header>
+
+  <section class="contacts container">
+    <div class="list-wrapper flex">
+      <div class="letter purple">A</div>
+
+      <ul>
+        <li>
+          <div class="person flex">
+            <img src="./imagens/Avatar.png" alt="img0">
+
+            <div class="contact">
+              <h3>Abraão</h3>
+              <p>(11) 90876-1234</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="list-wrapper flex">
+      <div class="letter green">B</div>
+      
+      <ul>
+        <li>
+          <div class="person flex">
+            <img src="./imagens/Avatar (1).png" alt="img0">
+            
+            <div class="contact">
+              <h3>Beatriz</h3>
+              <p>(48) 90876-1123</p>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="person flex">
+            <img src="./imagens/Avatar (2).png" alt="img0">
+            
+            <div class="contact">
+              <h3>Brenda</h3>
+              <p>(21) 90876-8765</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
   
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.
+  0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.
+  0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
