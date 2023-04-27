@@ -8,6 +8,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 html, body, input {
   font-family: 'Roboto' Arial, sans-serif;
 }
@@ -102,6 +106,18 @@ form {
   display: flex;
   flex-direction: column;
   gap: 52px;
+
+  height: 75vh;
+  overflow: scroll;
+}
+
+.contacts::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+  background-color: #282843;
+  border-radius: 999px;
 }
 
 .letter {
@@ -127,8 +143,15 @@ form {
   --color: #633bbc;
 }
 
-.green {
-  --color: #07847e;
+.yellow {
+  --color: #b38c00;
+}
+.pink {
+  --color:#9a00b3
+}
+
+.blue {
+  --color: #0088b3;
 }
 
 .person {
